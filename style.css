@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ 
+    text-decoration: none;
+    font-family: 'Oleo Script', cursive;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-image: url(img/fleur-d-orange-logo/fdo-qar130-150.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu{
+	width: 100%;
+	position: fixed;
+	top: 0;
+    background-color: rgb(167, 90, 170);
+    background-image: linear-gradient(to left , rgb(158,58,88), rgb(167,90,170),rgb(98, 56, 99),rgb(109, 23, 45));
+    z-index: 2;
+    display: flex;
+    opacity: 0.8 ;
+}
+
+.menu  img{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    margin-top: 11.5px;
+    margin-left: 11.5px;
+    cursor: pointer;
+}
+
+.menu  h1  {
+    padding: 20px 0px;  
+    text-align: center;
+    margin: 0px auto;
+  font-size: 28px;
+    color: black;
+    font-family: 'Cinzel Decorative', cursive;
+    text-decoration: none;
+    cursor: default;
+}
+.communication-img {
+    width: 48px;
+    height: 48px;
+    right: 1%; 
+    top: 80px;
+    position: fixed;
+    cursor: pointer;
+}
+.communication-img img{
+    width: 48px;
+    height: 48px;
+}
+.product-list{
+    width: 75%;
+    background-color: rgba(88, 13, 56, 0.5);
+    height:800px;
+    margin: 10% auto;
+    border-radius: 25px; 
+}
+.products-div{
+    float: left;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 350px;
+    position: relative;
+}
+.products-div img{
+   width: 100%;
+   height: 300px;
+   display: block;
+   margin: auto;
+   border-radius: 25px;
+   cursor: pointer;
+}
+.products-div h3{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    display: block;
+    background-color: rgb(179, 60, 103);
+    background-image: linear-gradient(to top left, rgb(243, 176, 200), rgb(226, 103, 148),rgb(190,0,100),rgb(82, 12, 27),rgb(92,18,34), rgb(63, 7, 27));
+    margin-top: 10%;
+    z-index: 2;
+}
+footer h2{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2%;
+    color:rgb(214, 196, 201);
+    font-family: 'Fugaz One', cursive;  
+}
+.icon-div{
+    width: 180px;
+    height: 30px;
+    display:flex;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding-top: 2%;
+}
+.contact-icon-img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    
+}
+.contact-icon-img:hover{
+    width: 31px;
+    height: 31px;
+    border-radius: 5px;
+    transition:0.2s;
+    cursor: pointer;
+}
+.modal-contact{
+   width: 20px;
+   height: 20px;
+}
+
+.modal-contact-head{
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width: 576px) {
+    .menu h1{
+        font-size: 20px;
+    }
+    .product-list {
+      height: 1900px;
+      margin: 10% auto;
+      width: 70%;
+      margin-top: 30px;
+    }
+    .products-div h3{
+       background-color: rgb(90, 29, 57);
+       width: 33%px;
+       text-align: center;
+       margin: 5px auto;
+       color: burlywood;
+       border-radius: 50px;
+       font-size: 10px;
+    }
+    .communication-img{
+        width: 30px;
+        height: 30px;
+        top: 100px;
+    }
+    .communication-img img{
+        width: 30px;
+        height: 30px;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 768px){
+    .product-list {
+        height: 1850px;
+        margin: 20% auto;
+        width: 50%;
+      }
+      .products-div h3{
+        background-color: rgb(90, 29, 57);
+        width: 33%px;
+        text-align: center;
+        margin: 5px auto;
+        color: burlywood;
+        border-radius: 50px;
+        opacity: 0.9;
+     }
+  }
+
+  @media screen and (min-width: 768px) and (max-width:992px){
+    .product-list {
+        height: 1350px;
+        margin: 20% auto;
+        width: 80%;
+      }
+      .products-div h3{
+        background-color: rgb(90, 29, 57);
+        width: 33%px;
+        text-align: center;
+        margin: 5px auto;
+        color: burlywood;
+        border-radius: 50px;
+        opacity: 0.9;
+     }  
+  }
+
+
+
+
+
+  /* .over{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+     background-color: #008CBA; 
+    border-radius: 20px;
+    background-image: linear-gradient(to top  , rgb(223, 60, 223), rgb(128, 58, 207),rgb(238, 127, 164),rgb(241, 43, 142));
+}
+
+ .products-div:hover .over {
+    opacity: 1;
+  } 
+.text{
+    color: rgb(49, 37, 11);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */

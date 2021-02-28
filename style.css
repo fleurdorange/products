@@ -139,9 +139,8 @@ footer h2{
     }
     .product-list {
       height: 1900px;
-      margin: 10% auto;
       width: 70%;
-      margin-top: 30px;
+      margin-top: 80px;
     }
     .products-div h3{
        background-color: rgb(90, 29, 57);
